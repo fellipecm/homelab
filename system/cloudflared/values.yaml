@@ -4,11 +4,13 @@ cloudflared:
   config:
     tunnel: homelab
     ingress:
-      - hostname: '*.khuedoan.com'
+      - hostname: '*.fellipecm.com'
         service: https://ingress-nginx-controller.ingress-nginx
         originRequest:
           noTLSVerify: true
       - service: http_status:404
+  image:
+    tag: "2023.4.1"
 
   podMonitor:
     enabled: true
