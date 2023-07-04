@@ -45,3 +45,4 @@ docker-registry:
     storageClass: longhorn
   garbageCollect:
     enabled: true
+  replicaCount: 1
