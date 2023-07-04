@@ -12,6 +12,18 @@
       length: 32
       special: false
 
+- path: gitea/dex
+  data:
+    - key: client_id
+      length: 32
+      special: false
+
+- path: gitea/dex
+  data:
+    - key: client_secret
+      length: 32
+      special: false
+
 # Registry
 - path: registry/admin
   data:
@@ -21,6 +33,13 @@
 
 # Tekton
 - path: tekton/webhook
+  data:
+    - key: token
+      length: 32
+      special: false
+
+# Renovate
+- path: gitea/renovate
   data:
     - key: token
       length: 32
